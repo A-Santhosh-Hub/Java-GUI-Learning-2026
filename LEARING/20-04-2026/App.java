@@ -5,9 +5,10 @@ import java.awt.*;
 import java.awt.event.*;
 import java.net.URI;
 
-class App extends Frame {
+class App  {
 
     App() {
+        Frame frame = new Frame();
         Button btn = new Button("HAI");
         Button btn1 = new Button("Welcome");
         Button btn2 = new Button("SanStudio");
@@ -40,14 +41,15 @@ class App extends Frame {
 
 
 
-        add(btn);
-        add(btn1);
-        add(btn2);
-        add(btn3);
+        frame.add(btn);
+         frame.add(btn1);
+         frame.add(btn2);
+         frame.add(btn3);
 
-        setLayout(new FlowLayout());
-        setVisible(true);
-        setSize(400, 600);
+         frame.setLayout(new FlowLayout());
+         frame.setVisible(true);
+         frame.setSize(400, 600);
+         frame.setTitle("JAVA GUI");
     }
 
     public static void main(String[] args) {
